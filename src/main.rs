@@ -1,5 +1,10 @@
+include!("aa/fun.rs");
+
+fn test_include_fun() {
+    another_function();
+}
 fn main() {
-    let a ="runoob";
-    println!("Hello, world!, {}!", a);
-    println!("Hello, world!");
+    let args = std::env::args();
+    println!("{:?}", args);
+    test_include_fun();
 }
